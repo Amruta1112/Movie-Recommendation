@@ -1,0 +1,93 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    padding: 0px 20px;
+  }
+  
+  /* Left Side (Menu) */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+        
+  .menu-icon, .menu-text {
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-left:hover .menu-text {
+    color: #f5c518; /* IMDb's yellow hover effect */
+  }
+  
+  /* Search Bar */
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    border-radius: 5px;
+    padding: 5px;
+    width: 40%;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .search-category {
+    border: none;
+    padding: 5px;
+    background-color:  #121212;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+  }
+  
+  .search-icon {
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .search-icon:hover {
+    color: rgb(112, 112, 112);
+  }
+  
+  /* Right Side (Watchlist, Sign In, Logout) */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .watchlist, .sign-in, .language, .pro-text {
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+  }
+  .logout-btn{
+    cursor: pointer;
+    border: 0cm;
+    transition: color 0.3s ease;
+  }
+  /* IMDbPro Hover */
+  .pro-text:hover {
+    color: #f5c518;
+  }
+  
+  /* Watchlist & Sign In Hover */
+  .watchlist:hover, .sign-in:hover, .logout-btn:hover {
+    color: #f5c518; /* IMDb's yellow hover effect */
+  }
+  
+  /* Language Dropdown */
+  .language:hover {
+    color: #f5c518;
+  }
+  

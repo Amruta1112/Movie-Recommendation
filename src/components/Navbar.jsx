@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { logoutUser } from "../services/auth";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { FaBars, FaCameraRetro, FaFilm} from "react-icons/fa";
+import { FaBars, FaCameraRetro, FaFilm } from "react-icons/fa";
 import "../styles/navbar.css";
 
 const Navbar = () => {
@@ -37,10 +37,9 @@ const Navbar = () => {
         <span className="menu-text">MOVIEMATE</span>
       </div>
 
-
       {/* Right Side (User Options) */}
       <div className="navbar-right">
-       
+        <Link to="/liked" className="nav-link">Liked Movies</Link>
         <Link to="/watchlist" className="watchlist">+ Watchlist</Link>
         <h4 className="welcome-text">{userName}</h4>
         {userName === "Guest" ? (
@@ -48,7 +47,6 @@ const Navbar = () => {
         ) : (
           <button className="logout-btn" onClick={handleLogout}>Logout</button>
         )}
-        
       </div>
     </nav>
   );

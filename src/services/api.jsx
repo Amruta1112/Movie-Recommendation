@@ -51,3 +51,4 @@ export const getMovieTrailer = async (movieId) => {
     return null;
   }
 };
+
